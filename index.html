@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator App</title>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+
+  <input type="number" id="num1">
+  <input type="number" id="num2">
+
+  <br><br>
+
+  <button onclick="add()">Add</button>
+  <button onclick="sub()">Subtract</button>
+  <button onclick="mul()">Multiply</button>
+  <button onclick="div()">Divide</button>
+
+  <h3 id="result"></h3>
+
+  <script>
+    function add() {
+      result.innerText = "Result: " + (num1.valueAsNumber + num2.valueAsNumber);
+    }
+    function sub() {
+      result.innerText = "Result: " + (num1.valueAsNumber - num2.valueAsNumber);
+    }
+    function mul() {
+      result.innerText = "Result: " + (num1.valueAsNumber * num2.valueAsNumber);
+    }
+    function div() {
+      result.innerText = "Result: " + (num1.valueAsNumber / num2.valueAsNumber);
+    }
+  </script>
+</body>
+</html>
